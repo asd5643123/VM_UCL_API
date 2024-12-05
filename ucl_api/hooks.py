@@ -5,6 +5,12 @@ app_description = "UCL實驗室用於調用HR模組數據之API"
 app_email = "c112118210@nkust.edu.tw"
 app_license = "mit"
 
+override_whitelisted_methods = {
+    "employee_query": "ucl_api.ucl_hr_api.api.employee_query",
+    "staff_query": "ucl_api.ucl_hr_api.api.staff_query"
+}
+
+
 # Apps
 # ------------------
 
